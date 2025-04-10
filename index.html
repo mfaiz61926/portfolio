@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+     <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo-maker"><span>F</span>aiz.</h1>
+                <!-- <img src="images/faizlogo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER AND COMPETITIVE PROGRAMMER</p>
+                <h1>Hi I'm Mohd <span>Faiz</span><br> from India</h1>
+            </div>
+        </div>
+
+     </div>
+
+     <!-- --------about------ -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1721160510716.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>I’m a Full Stack Web Developer and an AIML student with a strong background in Data Structures and Algorithms. My passion for competitive programming helps me solve complex problems efficiently. I build scalable, user-friendly web applications using modern technologies across the stack. My AIML studies allow me to integrate advanced algorithms into my work. I’m constantly learning and improving my skills in both development and machine learning. I love tackling challenges and building innovative solutions.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Structures And Algorithms (DSA)</span><br>Proficient in Data Structures and Algorithms, including arrays, linked lists, trees, graphs, dynamic programming, and sorting algorithms, with a focus on optimizing solutions for efficiency and performance. </li>
+                            <li><span>Web Development</span><br>Skilled in Full Stack Web Development, proficient in both front-end (HTML, CSS, JavaScript, React) and back-end (Node.js, Express, MongoDB, SQL) technologies, with a focus on building scalable, responsive, and efficient web applications.</li>
+                            <li><span>competitive programming</span><br>Active in competitive programming, with experience in solving complex algorithmic problems and optimizing solutions under time constraints across platforms like Codeforces and LeetCode.</li>
+                            
+                            <li><span>AIML & Python</span><br>Currently studying AIML, using Python to explore machine learning algorithms, data analysis, and artificial intelligence models to build intelligent, data-driven solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2026</span><br>Currently pursuing a BTech in Computer Science and Engineering with a specialization in AIML at JSS Academy of Technical Education, Noida, India. I am strengthening my skills in full-stack development, Python, competitive programming, and core subjects like Operating Systems, Databases, Computer Networks, LLD/OOD, and OOPS. </li>
+                            <!-- <li><span>2022-2023</span><br>Team lead at startup</li>
+                            <li><span>2021-2022</span><br>Internship at Rate-Gain company</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>Btech in CSE(AIML) at jssaten </li>
+                            <li><span>2020</span><br>CBSE-12th</li>
+                            <li><span>2018</span><br>CBSE-10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+<!-- ---------services------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full Stack Development</h2>
+                <p>Offering end-to-end Full Stack Development services, specializing in building scalable, responsive web applications with expertise in both front-end and back-end technologies.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>DSA & competitive programming</h2>
+                <p>Providing expert solutions in Data Structures and Algorithms (DSA) and competitive programming, specializing in optimizing problem-solving skills for complex algorithmic challenges.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>AI & ML</h2>
+                <p>Offering AI and ML solutions, specializing in building intelligent models and algorithms for data-driven applications, with expertise in machine learning, deep learning, and natural language processing.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>Providing Python development services, leveraging libraries like NumPy, Pandas, Matplotlib, and TensorFlow to build data-driven applications, automation scripts, and machine learning models.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/hired.jpg" alt="">
+                <div class="layer">
+                    <h3>Job Portal</h3>
+                    <p>A job portal built with React, Vite, Supabase, Clerk, and TailwindCSS, deployed on Vercel, offering seamless job search, application management, and secure authentication.</p>
+                    <a href="https://hiredportal.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/weatherApp.jpg" alt="">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>A Weather App built with JavaScript and a weather API, providing real-time weather updates, location-based forecasts, and a user-friendly interface.</p>
+                    <a href="https://mfaiz61926.github.io/weather-app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ticktacktoe.jpg" alt="">
+                <div class="layer">
+                    <h3>Tic Tack Toe Game</h3>
+                    <p>A Tic-Tac-Toe game developed with JavaScript, offering an interactive two-player experience with real-time gameplay and a responsive interface.</p>
+                    <a href="https://mfaiz61926.github.io/Criss-cross-game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/todo.jpg" alt="">
+                <div class="layer">
+                    <h3>Dark Mode Todo List</h3>
+                    <p>A Todo List application built with JavaScript, allowing users to add, edit, delete, and mark tasks as completed with a simple, interactive interface.</p>
+                    <a href="https://mfaiz61926.github.io/Simple-to-do-list-Dark-Mode/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -------contact----here is instagram and other social media handles -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mohd-faiz-738226262/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Faiz_Resume 01.pdf" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div> 
+            
+        </div>
+        <div class="copyright">
+            <p>Copyright © Faiz. Made with <i class="fa-solid fa-heart"></i> and easy work.</p>
+        </div>
+    </div>
+</div>
+    <script >
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby456PT6KT2FZhmAL6kouPwhquXHAjn54228R9YWYF7C198uYGtSiPcOwry_3lqTIMn6w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
